@@ -1,21 +1,737 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Simple Project</title>
-    <link rel="stylesheet" href="css/style.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Event information platform by OmiKiTeam."
+    >
+
+    <title>TechNova 2026 | OmiKiTeam</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 
 </head>
 
+
 <body>
 
-    <h1>Hello World!</h1>
+    <!-- ==========================================
+         NAVIGATION
+    =========================================== -->
 
-    <p>This is my first website.</p>
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a
+                href="#home"
+                class="logo"
+            >
+                OmiKi<span>Team</span>
+            </a>
+
+
+            <nav class="nav-menu">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#event">
+                    Event
+                </a>
+
+                <a href="#schedule">
+                    Schedule
+                </a>
+
+                <a href="#location">
+                    Location
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+                <a href="#settings">
+                    Settings
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button
+                    id="searchButton"
+                    class="icon-button"
+                    aria-label="Search"
+                >
+                    🔍
+                </button>
+
+
+                <button
+                    id="themeButton"
+                    class="icon-button"
+                    aria-label="Toggle theme"
+                >
+                    🌙
+                </button>
+
+
+                <button
+                    id="menuButton"
+                    class="menu-button"
+                    aria-label="Open menu"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- ==========================================
+             HERO
+        =========================================== -->
+
+        <section
+            id="home"
+            class="hero"
+        >
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        OmiKiTeam Presents
+                    </span>
+
+
+                    <h1 id="eventName">
+                        TechNova 2026
+                    </h1>
+
+
+                    <h2 id="eventTagline">
+                        Innovation • Technology • Future
+                    </h2>
+
+
+                    <p id="eventDescription">
+                        TechNova 2026 is a technology-focused event
+                        bringing together students, developers,
+                        innovators and technology enthusiasts.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#event"
+                            class="btn primary-button"
+                        >
+                            Explore Event
+                        </a>
+
+
+                        <a
+                            href="#location"
+                            class="btn secondary-button"
+                        >
+                            View Location
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COUNTDOWN -->
+
+                <div class="countdown-card">
+
+                    <div class="countdown-header">
+
+                        <span>
+                            Event starts in
+                        </span>
+
+                        <span class="live-dot"></span>
+
+                    </div>
+
+
+                    <div class="countdown">
+
+                        <div class="countdown-item">
+
+                            <strong id="days">
+                                00
+                            </strong>
+
+                            <span>
+                                Days
+                            </span>
+
+                        </div>
+
+
+                        <div class="countdown-item">
+
+                            <strong id="hours">
+                                00
+                            </strong>
+
+                            <span>
+                                Hours
+                            </span>
+
+                        </div>
+
+
+                        <div class="countdown-item">
+
+                            <strong id="minutes">
+                                00
+                            </strong>
+
+                            <span>
+                                Minutes
+                            </span>
+
+                        </div>
+
+
+                        <div class="countdown-item">
+
+                            <strong id="seconds">
+                                00
+                            </strong>
+
+                            <span>
+                                Seconds
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             EVENT INFORMATION
+        =========================================== -->
+
+        <section
+            id="event"
+            class="section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        EVENT INFORMATION
+                    </span>
+
+                    <h2>
+                        Everything you need to know.
+                    </h2>
+
+                </div>
+
+
+                <div class="event-info-grid">
+
+
+                    <article class="info-card">
+
+                        <span class="info-icon">
+                            📅
+                        </span>
+
+                        <span class="info-label">
+                            DATE
+                        </span>
+
+                        <h3 id="eventDate">
+                            24 October 2026
+                        </h3>
+
+                    </article>
+
+
+                    <article class="info-card">
+
+                        <span class="info-icon">
+                            🕐
+                        </span>
+
+                        <span class="info-label">
+                            TIME
+                        </span>
+
+                        <h3 id="eventTime">
+                            10:00 AM – 06:00 PM
+                        </h3>
+
+                    </article>
+
+
+                    <article class="info-card">
+
+                        <span class="info-icon">
+                            📍
+                        </span>
+
+                        <span class="info-label">
+                            VENUE
+                        </span>
+
+                        <h3 id="eventVenue">
+                            City Convention Center
+                        </h3>
+
+                    </article>
+
+
+                    <article class="info-card">
+
+                        <span class="info-icon">
+                            🎫
+                        </span>
+
+                        <span class="info-label">
+                            EVENT TYPE
+                        </span>
+
+                        <h3 id="eventType">
+                            Technology Conference
+                        </h3>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             SCHEDULE
+        =========================================== -->
+
+        <section
+            id="schedule"
+            class="section schedule-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        SCHEDULE
+                    </span>
+
+                    <h2>
+                        Event timeline.
+                    </h2>
+
+                    <p>
+                        Follow the complete program schedule.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="scheduleContainer"
+                    class="schedule-container"
+                >
+
+                    <!-- JavaScript will insert schedule -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             LOCATION
+        =========================================== -->
+
+        <section
+            id="location"
+            class="section"
+        >
+
+            <div class="container location-grid">
+
+
+                <div>
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                            LOCATION
+                        </span>
+
+                        <h2>
+                            Find the venue.
+                        </h2>
+
+                    </div>
+
+
+                    <div class="location-details">
+
+                        <h3 id="locationVenue">
+                            City Convention Center
+                        </h3>
+
+
+                        <p id="locationAddress">
+                            123 Example Road,
+                            Aurangabad,
+                            Maharashtra,
+                            India
+                        </p>
+
+
+                        <a
+                            id="directionsButton"
+                            class="btn primary-button"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            📍 Get Directions
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="map-container">
+
+                    <div id="eventMap"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             STAKEHOLDERS
+        =========================================== -->
+
+        <section
+            id="contact"
+            class="section contact-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        CONTACT
+                    </span>
+
+                    <h2>
+                        Event contacts.
+                    </h2>
+
+                    <p>
+                        Need help? Connect with the event team.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="stakeholderContainer"
+                    class="stakeholder-grid"
+                >
+
+                    <!-- JavaScript will insert contacts -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             ABOUT
+        =========================================== -->
+
+        <section class="about-section">
+
+            <div class="container about-container">
+
+                <div>
+
+                    <span class="section-label">
+                        ABOUT OMIKITEAM
+                    </span>
+
+                    <h2>
+                        Making event information simple.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    OmiKiTeam creates modern digital experiences
+                    for events, programs and functions.
+                    Our platform brings important event information
+                    into one simple and accessible place.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         SETTINGS
+    =========================================== -->
+
+    <section
+        id="settings"
+        class="settings-section"
+    >
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    SETTINGS
+                </span>
+
+                <h2>
+                    Customize your experience.
+                </h2>
+
+                <p>
+                    Manage the appearance and preferences
+                    of the OmiKiTeam event platform.
+                </p>
+
+            </div>
+
+            <div class="settings-grid">
+
+                <!-- Appearance -->
+
+                <article class="settings-card">
+
+                    <div class="settings-card-icon">
+                        🎨
+                    </div>
+
+                    <h3>
+                        Appearance
+                    </h3>
+
+                    <p>
+                        Choose between light and dark mode.
+                    </p>
+
+                    <div class="settings-actions">
+
+                        <button
+                            id="settingsLightMode"
+                            class="settings-action"
+                        >
+                            ☀️ Light
+                        </button>
+
+                        <button
+                            id="settingsDarkMode"
+                            class="settings-action"
+                        >
+                            🌙 Dark
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- About -->
+
+                <article class="settings-card">
+
+                    <div class="settings-card-icon">
+                        ℹ️
+                    </div>
+
+                    <h3>
+                        About OmiKiTeam
+                    </h3>
+
+                    <p>
+                        OmiKiTeam creates modern digital
+                        experiences for events, programs
+                        and functions.
+                    </p>
+
+                    <span class="settings-version">
+                        Version 1.0
+                    </span>
+
+                </article>
+
+                <!-- Platform -->
+
+                <article class="settings-card">
+
+                    <div class="settings-card-icon">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        Event Platform
+                    </h3>
+
+                    <p>
+                        A reusable platform for displaying
+                        event information in one place.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div>
+
+                <strong>
+                    OmiKiTeam
+                </strong>
+
+                <p>
+                    Modern event information platform.
+                </p>
+
+            </div>
+
+
+            <p>
+                © 2026 OmiKiTeam. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==========================================
+         SEARCH MODAL
+    =========================================== -->
+
+    <div
+        id="searchModal"
+        class="modal hidden"
+    >
+
+        <div class="modal-content">
+
+            <button
+                id="closeSearch"
+                class="modal-close"
+            >
+                ×
+            </button>
+
+            <h2>
+                Search Event
+            </h2>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search event information..."
+            >
+
+            <div id="searchResults"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         SETTINGS BUTTON
+    =========================================== -->
+
+    <a
+        href="#settings"
+        id="settingsButton"
+        class="settings-button"
+        aria-label="Open settings"
+    >
+        ⚙️
+    </a>
+
+
+    <script src="js/data.js"></script>
+
     <script src="js/script.js"></script>
 
-
 </body>
+
 </html>
